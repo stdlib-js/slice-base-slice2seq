@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/slice-base-slice2seq",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Convert a Slice object to a subsequence string.",
   "license": "Apache-2.0",
   "author": {
