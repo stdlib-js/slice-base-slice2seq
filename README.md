@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@esm/index.mjs';
+import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@v0.1.1-esm/index.mjs';
 ```
 
 <a name="main"></a>
@@ -95,7 +95,7 @@ var str = slice2seq( new Slice( 0, 5, 1 ) );
 <script type="module">
 
 import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
-import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@esm/index.mjs';
+import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@v0.1.1-esm/index.mjs';
 
 var str = slice2seq( new Slice( null, null, null ) );
 // returns ':'
