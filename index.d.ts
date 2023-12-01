@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,23 +16,22 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MAIN //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Slice } from '@stdlib/types/slice';
 
 /**
 * Converts a Slice object to a subsequence string.
 *
-* @param {Slice} slice - slice object
-* @returns {string} subsequence string
+* @param slice - input slice
+* @returns subsequence string
 *
 * @example
-* var Slice = require( '@stdlib/slice-ctor' );
+* var Slice = require( `@stdlib/slice/ctor` );
 *
 * var str = slice2seq( new Slice( null, null, null ) );
-* // returns ':'
-*
-* str = slice2seq( new Slice() );
 * // returns ':'
 *
 * str = slice2seq( new Slice( null ) );
@@ -77,38 +76,9 @@
 * str = slice2seq( new Slice( null, null, -1 ) );
 * // returns '::-1'
 */
-function slice2seq( slice ) {
-	var out;
-	var i;
-	var j;
-	var k;
-
-	i = slice.start;
-	j = slice.stop;
-	k = slice.step;
-
-	if ( i === null ) {
-		out = '';
-	} else {
-		out = String( i );
-	}
-	if ( j === null ) {
-		if ( k === null ) {
-			return out + ':';    // e.g., ':', '2:', '-1:'
-		}
-		if ( out === '' ) {
-			return '::' + k;     // e.g., '::2', '::-1'
-		}
-		return out + '::' + k;   // e.g., '1::2', '10::-1'
-	}
-	out += ':' + j;
-	if ( k === null ) {
-		return out;              // e.g., ':10', ':-1'
-	}
-	return out + ':' + k;        // e.g., ':10:2', ':-1:-1', '1:10:2', '10:2:-1', '-1:-5:-1'
-}
+declare function slice2seq( slice: Slice ): string;
 
 
 // EXPORTS //
 
-module.exports = slice2seq;
+export = slice2seq;
