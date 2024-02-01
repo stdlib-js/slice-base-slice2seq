@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/slice-base-slice2seq
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@esm/index.mjs';
+var slice2seq = require( '@stdlib/slice-base-slice2seq' );
 ```
 
 <a name="main"></a>
@@ -62,7 +80,7 @@ import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2se
 Converts a [`Slice`][@stdlib/slice/ctor] object to a subsequence string.
 
 ```javascript
-import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
+var Slice = require( '@stdlib/slice-ctor' );
 
 var str = slice2seq( new Slice( 0, 5, 1 ) );
 // returns '0:5:1'
@@ -88,14 +106,9 @@ var str = slice2seq( new Slice( 0, 5, 1 ) );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
-import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@esm/index.mjs';
+```javascript
+var Slice = require( '@stdlib/slice-ctor' );
+var slice2seq = require( '@stdlib/slice-base-slice2seq' );
 
 var str = slice2seq( new Slice( null, null, null ) );
 // returns ':'
@@ -144,10 +157,6 @@ str = slice2seq( new Slice( 1, -1, 2 ) );
 
 str = slice2seq( new Slice( null, null, -1 ) );
 // returns '::-1'
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -179,7 +188,7 @@ str = slice2seq( new Slice( null, null, -1 ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -233,13 +242,16 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/slice-base-slice2seq/tree/deno
+[deno-readme]: https://github.com/stdlib-js/slice-base-slice2seq/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/slice-base-slice2seq/tree/umd
+[umd-readme]: https://github.com/stdlib-js/slice-base-slice2seq/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/slice-base-slice2seq/tree/esm
+[esm-readme]: https://github.com/stdlib-js/slice-base-slice2seq/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/slice-base-slice2seq/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/slice-base-slice2seq/main/LICENSE
 
-[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor/tree/esm
+[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor
 
 </section>
 
