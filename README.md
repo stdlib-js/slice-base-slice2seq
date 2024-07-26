@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/slice-base-slice2seq/tags). For example,
+
+```javascript
 import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@v0.2.2-esm/index.mjs';
 ```
 
@@ -95,7 +100,7 @@ var str = slice2seq( new Slice( 0, 5, 1 ) );
 <script type="module">
 
 import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
-import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@v0.2.2-esm/index.mjs';
+import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@esm/index.mjs';
 
 var str = slice2seq( new Slice( null, null, null ) );
 // returns ':'
