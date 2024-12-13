@@ -175,6 +175,12 @@ str = slice2seq( new Slice( null, null, -1 ) );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/slice-base/seq2slice`][@stdlib/slice/base/seq2slice]</span><span class="delimiter">: </span><span class="description">convert a subsequence string to a Slice object.</span>
+
 </section>
 
 <!-- /.related -->
@@ -252,6 +258,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/slice-base-slice2seq/main/LICENSE
 
 [@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/slice/base/seq2slice]: https://github.com/stdlib-js/slice-base-seq2slice
+
+<!-- </related-links> -->
 
 </section>
 
