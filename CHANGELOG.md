@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-11)
+## Unreleased (2025-08-20)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`5acfd64`](https://github.com/stdlib-js/stdlib/commit/5acfd64326637640433a7e3ffc5d101db23ab1d8) - **docs:** fix example code _(by Philipp Burckhardt)_
 -   [`5cb36ef`](https://github.com/stdlib-js/stdlib/commit/5cb36ef4c6f8158585ac88867a8dec21ed3fa372) - **docs:** update related packages sections [(#3890)](https://github.com/stdlib-js/stdlib/pull/3890) _(by stdlib-bot)_
 
 </details>
@@ -19,6 +20,18 @@
 </section>
 
 <!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
