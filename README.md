@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/slice-base-slice2seq/tags). For example,
+
+```javascript
 import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@v0.2.3-deno/mod.js';
 ```
 
@@ -90,7 +95,7 @@ var str = slice2seq( new Slice( 0, 5, 1 ) );
 
 ```javascript
 import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
-import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@v0.2.3-deno/mod.js';
+import slice2seq from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-slice2seq@deno/mod.js';
 
 var str = slice2seq( new Slice( null, null, null ) );
 // returns ':'
